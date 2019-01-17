@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 This code is used ONLY for creating the the HDF5 file from the training set
-to calculate saliency maps and maximum activations! We do NOT use the created
-file for training!!! 
+
 """
 
 
@@ -16,8 +15,8 @@ shuffle_data = True  # shuffle the addresses before saving
 
 # address to where you want to save the hdf5 file
 
-image_path =      '/media/asgharpn/daten2017-03/Bone_Machine_learning/Learning_dataset/projected_not_squared_yz_test_01_without_2mice_10/*.mat'
-HDF5_files_path = '/media/asgharpn/daten2017-03/Bone_Machine_learning/Learning_dataset/projected_not_squared_yz_test_01_without_2mice_10/HDF5_2Mice_10/'
+image_path =      ' Location of images *.mat'
+HDF5_files_path = ' Location of HDF5 dataset'
 bone_evaluation_projected_set_path = HDF5_files_path+'bone_projected_train_set.hdf5'  
 
 dt = h5py.special_dtype(vlen=bytes)
