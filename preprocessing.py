@@ -1,11 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Apr 18 11:51:52 2018
-
-@author: asgharpn
-"""
-
-# Copyright (c) 2017, Oren Kraus All rights reserved.
+# Copyright (c) 2017, Pouyan AsgharzadehAll rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without modification,
 # are permitted provided that the following conditions are met:
@@ -32,7 +25,10 @@ Created on Wed Apr 18 11:51:52 2018
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-
+"""
+This is a modified version of the code from : Oren Kraus
+https://github.com/okraus/DeepLoc
+"""
 import numpy as np
 
 def preProcessImages(batchData,imSize_x,imSize_z,cropSize,channels,rescale=False,stretch=False,
