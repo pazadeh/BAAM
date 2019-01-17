@@ -6,22 +6,15 @@
 
 clear 
 clc
-cd('/media/asgharpn/daten2017-03/Bone_Machine_learning/Learning_dataset/Original_images')
+cd('image directory')
 files = dir('*.mat');
 image_sizes = [];
-addpath('/media/asgharpn/daten2017-03/Protein_Machine_learning/Functions/');
+addpath('where your functions are');
 
 
-original_images_path  = '/media/asgharpn/daten2017-03/Bone_Machine_learning/Learning_dataset/Original_images';
-resampled_images_path = '/media/asgharpn/daten2017-03/Bone_Machine_learning/Learning_dataset/resampled_borders_test_01';
-% 
-% for i=1:length(files)
-%     img = load(files(i).name);
-%     image = struct2cell(img(1));
-%     image = image{1,1};
-%     image_sizes = [image_sizes;size(image)];
-%     
-% end
+original_images_path  = ' original image directory ';
+resampled_images_path = ' resampled image directory ';
+
 
 min_z_dim =161+1;
 
