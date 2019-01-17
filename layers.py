@@ -1,5 +1,3 @@
-
-
 # Copyright (c) 2017, Pouyan AsgharzadehAll rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without modification,
