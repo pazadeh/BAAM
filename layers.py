@@ -1,4 +1,6 @@
-# Copyright (c) 2017, Oren Kraus All rights reserved.
+
+
+# Copyright (c) 2017, Pouyan AsgharzadehAll rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without modification,
 # are permitted provided that the following conditions are met:
@@ -24,6 +26,11 @@
 # ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+"""
+This is a modified version of the code from : Oren Kraus
+https://github.com/okraus/DeepLoc
+"""
 
 import tensorflow as tf
 
