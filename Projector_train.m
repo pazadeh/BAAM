@@ -1,21 +1,22 @@
 %% Projector
-%  This code makes the image a square by its biggest dimension and also
-%  projects all the slices into one by adding up all the slices of the
+%  This code projects all the slices into one by adding up all the slices of the
 %  image
 
-% It is important to know that this codes projects everything Y-Z plane and
-% if we want projection on other planes this has to be changed.
+% It is important to know that this codes projects everything X-Z and Y-Z planes.
+% Based on the application you should pick which one you like
+
 
 clear 
 clc
-resmapled_images_path = '/media/asgharpn/daten2017-03/Bone_Machine_learning/Learning_dataset/resampled_borders_test_01';
-projected_images_path_yz = '/media/asgharpn/daten2017-03/Bone_Machine_learning/Learning_dataset/projected_not_squared_yz_test_01';
-projected_images_path_xz = '/media/asgharpn/daten2017-03/Bone_Machine_learning/Learning_dataset/projected_not_squared_xz_test_01';
+resmapled_images_path = ' location of resampled images';
+projected_images_path_yz = ' Location of projected images in YZ direction ';
+projected_images_path_xz = '/Location of projected images in XZ direction ';
 
 cd(resmapled_images_path)
 files = dir('*.mat');
-addpath('/media/asgharpn/daten2017-03/Bone_Machine_learning/Functions/');
+addpath('Location of functions');
 
+% size base on your images should be changed
 max_x_dim = 602;
 max_y_dim = 733;
 max_z_dim = 161;
