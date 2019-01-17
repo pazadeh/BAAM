@@ -16,8 +16,8 @@ original_images_path  = ' original image directory ';
 resampled_images_path = ' resampled image directory ';
 
 
+% Should be picked based on desired size of images
 min_z_dim =161+1;
-
 max_x_dim =602;
 max_y_dim =733;
 
