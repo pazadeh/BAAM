@@ -3,7 +3,7 @@ Bone Age Assesment Method (BAAM) :Predicting bone age based on 3D µCT images of
 The codes are tailored for data used in BAAM paper but could be easily used for any classification puposase of 3D images.
 
 Here you can find the following seris of codes:
-1. Image preproccessing (MATLAB)
+1. Image preproccessing (MATLAB):
 
 1.1. Size homogenization: Not all the images have originaly the same size. This code will make them homogenized based on the the smallest dimensions in the dataset.
 1.2. Projector: This code will perform and intensity projection on the images with same size.
