@@ -1,9 +1,7 @@
-# -*- coding: utf-8 -*-
 """
-Created on Fri Apr  6 14:29:18 2018
+This code is used for augmentating the images to reach the neccessary number for training a deep neural network
+"""
 
-@author: asgharpn
-"""
 
 from imgaug import augmenters as iaa
 import numpy as np
@@ -18,7 +16,7 @@ import sys
 
 
 
-image_path = '/media/asgharpn/daten2017-03/Bone_Machine_learning/Learning_dataset/projected_not_squared_yz_test_01_without_2mice_04/*.mat'  
+image_path = ' location of preprocessed images (.mat)'  
 num_rotations    = 15
 trans_percent    = float(2)
 rot_angle        = 1
@@ -42,7 +40,7 @@ img = img["slice_new"]
 
 
 # Creating the hdf5 files
-images_path = '/media/asgharpn/daten2017-03/Bone_Machine_learning/Learning_dataset/projected_augmented_not_squared_yz_test_01_without_2mice_04/'
+images_path = 'Location of augmented images'
 ip_path =images_path +'dataset_prjected.hdf5'  
 ip_rotated_path = images_path+'dataset_prjected_rotated.hdf5'  
 ip_rotated_flipped_h_path  = images_path+'dataset_prjected_rotated_flipped_h.hdf5'  
@@ -97,7 +95,11 @@ for i in range(-int(num_rotations/rot_angle),int(math.ceil(num_rotations/rot_ang
         j=j+1
         counter_first = counter_first+1
         pbar.update(1)
-print('Rotation finished')        
+print('Rotation finished')    
+
+"""
+if horizontal flipping is required you can use the code bellow
+"""
 #Horizontal_flip   
 
 #ip_rotated_flipped_h_shape = (num_rotations,len(addrs),img.shape[0],img.shape[1])
@@ -190,27 +192,6 @@ for i in range(ip_rotated_shape[0]):
         counter = counter+1
         pbar.update(1)
 
-    
-#for i in range(ip_rotated_flipped_h_shape[0]):
-#    for j in range(ip_rotated_flipped_h_shape[1]):
-#        ip_augmented['data1'][counter] = ip_rotated_flipped_h['images'][i][j]
-#        ip_augmented['Index1'][counter]= ip_rotated_flipped_h['Index1'][i][j]
-#        counter = counter+1
-#        pbar.update(1)
-#        
-#for i in range(ip_rotated_flipped_v1_shape[0]):
-#    for j in range(ip_rotated_flipped_v1_shape[1]):
-#        ip_augmented['data1'][counter] = ip_rotated_flipped_v1['images'][i][j]
-#        ip_augmented['Index1'][counter]= ip_rotated_flipped_v1['Index1'][i][j]
-#        counter = counter+1
-#        pbar.update(1)
-#        
-#for i in range(ip_rotated_flipped_v2_shape[0]):
-#    for j in range(ip_rotated_flipped_v2_shape[1]):
-#        ip_augmented['data1'][counter] = ip_rotated_flipped_v2['images'][i][j]
-#        ip_augmented['Index1'][counter]= ip_rotated_flipped_v2['Index1'][i][j]     
-#        counter = counter+1
-#        pbar.update(1)
 print("first finishe \n")        
 for i in range(ip_rotated_translated_shape[0]):
     for j in range(ip_rotated_translated_shape[1]):
@@ -236,9 +217,6 @@ print('Dataset is created and there is no empty images')
    
 ip.close()
 ip_rotated.close()
-#ip_rotated_flipped_h.close()
-#ip_rotated_flipped_v1.close()  
-#ip_rotated_flipped_v2.close()
 ip_rotated_translated.close()
 
 ip_augmented.close()         
