@@ -9,9 +9,10 @@ Here you can find the following seris of codes:
 1.2. Projector: This code will perform and intensity projection on the images with same size.
 
 2. Data Preparation (Python):
-  
-2.1. Augmentation: For increasing the number of images in training data set using standard augmenatation techniques such as rotation, translation and ...
-2.2. Schuffel: For shuffeling the data into train, validation and test datasets and creating HDf5 file format for optimal big structure.
+
+2.1  Data Annotation: Creating hot vectors for images to include their class. Here we extract this from the names of the files.
+2.2. Augmentation: For increasing the number of images in training data set using standard augmenatation techniques such as rotation, translation and ...
+2.3. Schuffel: For shuffeling the data into train, validation and test datasets and creating HDf5 file format for optimal big structure.
   
 3. Read and write libraries (Python): For transforming the data from different dataset into correct format in the process of training including batching and ...
    
