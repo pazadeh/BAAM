@@ -1,7 +1,5 @@
-# The content of the codes will be publicly available as soon as the paper gets accepted for publication.
-
 # BAAM
-Bone Age Assesment Method (BAAM) :Predicting bone age based on 3D µCT images of bone using a deep neural netwrork. 
+Bone Age Assesment Model (BAAM) :Predicting bone age based on 3D µCT images of bone using a deep neural netwrork. 
 The codes are tailored for data used in BAAM paper but could be easily used for any classification puposase of 3D images.
 
 Here you can find the following seris of codes:
