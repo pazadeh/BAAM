@@ -1,5 +1,11 @@
 # BAAM
 
+The reposetory for our preprint paper titled: 
+# Decoding the Rejuvenating Effects of Mechanical Loading on Skeletal Maturation using in Vivo Imaging and Deep Learning
+
+For a detailed clarification of the method and results of this project, please visit the preprint available at:
+
+https://arxiv.org/abs/1905.08099
 
 Bone Age Assesment Model (BAAM) :Predicting bone age based on 3D µCT images of bone using a deep neural netwrork. 
 
