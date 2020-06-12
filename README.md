@@ -3,9 +3,9 @@
 The reposetory for our preprint paper titled: 
 # Decoding the Rejuvenating Effects of Mechanical Loading on Skeletal Maturation using in Vivo Imaging and Deep Learning
 
-For a detailed clarification of the method and results of this project, please visit the preprint available at:
+For a detailed clarification of the method and results of this project, please take a look at our paper available at:
 
-https://arxiv.org/abs/1905.08099
+https://doi.org/10.1016/j.actbio.2020.02.007
 
 Bone Age Assesment Model (BAAM) :Predicting bone age based on 3D µCT images of bone using a deep neural netwrork. 
 The codes are tailored for data used in BAAM paper but could be easily used for any classification puposase of 3D images.
