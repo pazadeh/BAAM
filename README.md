@@ -1,6 +1,5 @@
 # BAAM
 
-The reposetory for our preprint paper titled: 
 # Decoding the Rejuvenating Effects of Mechanical Loading on Skeletal Maturation using in Vivo Imaging and Deep Learning
 
 For a detailed clarification of the method and results of this project, please take a look at our paper available at:
